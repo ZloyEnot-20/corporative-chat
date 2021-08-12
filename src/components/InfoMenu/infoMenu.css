@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.info-menu {
+  position: relative;
+  display: flex;
+  flex: 1;
+  height: 100%;
+
+  flex-direction: column;
+}
+
+.tabs-menu {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+
+.tabs {
+  display: flex;
+  flex: 1;
+  cursor: pointer;
+  justify-content: center;
+  background-color: teal;
+  align-items: center;
+  border-top: 2px solid rgb(145, 145, 145);
+  border-bottom: 2px solid rgb(145, 145, 145);
+  transition: all 0.3s ease-in;
+  /* border-bottom: 1px solid white; */
+}
+
+.tabs:nth-child(2) {
+  border-left: 2px solid rgb(145, 145, 145);
+  border-right: 2px solid rgb(145, 145, 145);
+}
+
+.tabs:hover {
+  /* background-color: aqua;
+  border-bottom: 2px solid aqua; */
+  opacity: 0.9;
+}
+
+.content {
+  position: relative;
+  width: 300%;
+  flex: 11;
+  background: darkgreen;
+  overflow: hidden;
+}
+
+.moveable-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transition: all 0.3s ease-in;
+}
+
+.rating{
+  background: transparent;
+}
+
+.tab-content {
+  position: absolute;
+  text-align: center;
+  width: calc(100% / 3);
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  transition: all 0.3s ease-in;
+  background-color: rgb(96, 212, 80);
+  transition: all 0.3s ease-in;
+  height: 100%;
+  user-select: none;
+  
+} 
+
+.tab-content:nth-child(2) {
+  position: absolute;
+  top: 0;
+  left: calc(100% / 3);
+  transition: all 0.3s ease-in;
+  background-color: rgb(76, 49, 153);
+  height: 100%;
+}
+.tab-content:nth-child(3) {
+  position: absolute;
+
+  top: 0;
+  left: calc(100% / 3 * 2);
+  transition: all 0.3s ease-in;
+  background-color: rgb(86, 211, 124);
+  height: 100%;
+}
+
+.rating-users {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-evenly;
+}
+
+.number-of-likes {
+  user-select: none;
+}
+
+.user-name {
+  user-select: none;
+  margin: -5px 10px;
+}
+
+.like-button {
+  margin-left: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in;
+}
+
+.like-button:hover {
+  transform: scale(1.1);
+}
+
+.like-button-wrap {
+  display: flex;
+  align-items: center;
+  justify-self: space-evenly;
+  flex: 1;
+  cursor: pointer;
+}
+.rating-user-name {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-left: 5px;
+  flex: 4;
+}
+
+.ads{
+  background:#56a6be;
+}
